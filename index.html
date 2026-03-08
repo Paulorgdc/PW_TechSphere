@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW TechSphere | Links Oficiais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, #0f172a 0%, #000000 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .active-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-glow {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+        }
+
+        .active-card.btn-glow:hover {
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center p-6 sm:p-12">
+
+    <!-- Cabeçalho -->
+    <header class="flex flex-col items-center mb-10 text-center">
+        <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-white/20 mb-4 shadow-xl bg-black flex items-center justify-center">
+            <!-- CAMINHO DA IMAGEM ATUALIZADO: Certifica-te de que o ficheiro se chama exatamente 'PW TechSphere.jpg' -->
+            <img src="PW TechSphere.jpg" alt="Logo PW TechSphere" class="w-full h-full object-cover">
+        </div>
+        <h1 class="text-2xl font-bold tracking-tight">PW TechSphere</h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-[280px]">
+            🛡️ Tecnologia & Inovação ao seu alcance.<br>
+            💻 Setups e hardware com preço de custo.
+        </p>
+    </header>
+
+    <main class="w-full max-w-md flex flex-col gap-8">
+
+        <!-- Grupo 1: Ofertas -->
+        <section class="text-center">
+            <span class="section-title">Promoções em Tempo Real 🔥</span>
+            <div class="flex flex-col gap-3">
+                <a href="https://t.me/pwtechsphere" target="_blank" class="glass-card active-card btn-glow p-4 rounded-2xl flex items-center justify-between group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="send" class="text-sky-400"></i>
+                        <span class="font-semibold">Canal no Telegram</span>
+                    </div>
+                    <span class="text-[10px] font-bold bg-sky-500/20 text-sky-400 px-2 py-1 rounded-md group-hover:bg-sky-500/30">ENTRAR</span>
+                </a>
+
+                <div class="glass-card p-4 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="message-circle" class="text-green-400"></i>
+                        <span class="font-semibold">Canal no WhatsApp</span>
+                    </div>
+                    <span class="text-[10px] font-bold bg-green-500/10 text-green-500/70 px-2 py-1 rounded-md">EM BREVE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grupo 2: E-commerce -->
+        <section class="text-center mb-8">
+            <span class="section-title">Nossas Lojas Oficiais 📦</span>
+            <div class="flex flex-col gap-3">
+                <a href="https://shopee.com.br/pw_techsphere" target="_blank" class="glass-card active-card btn-glow p-4 rounded-2xl flex items-center justify-between group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="shopping-cart" class="text-orange-500"></i>
+                        <span class="font-semibold">Shopee</span>
+                    </div>
+                    <span class="text-[10px] font-bold bg-orange-500/20 text-orange-500 px-2 py-1 rounded-md group-hover:bg-orange-500/30">ACESSAR</span>
+                </a>
+
+                <div class="glass-card p-4 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="shopping-bag" class="text-yellow-400"></i>
+                        <span class="font-semibold">Mercado Livre</span>
+                    </div>
+                    <span class="text-[10px] font-bold bg-yellow-500/10 text-yellow-500/70 px-2 py-1 rounded-md">EM BREVE</span>
+                </div>
+
+                <div class="glass-card p-4 rounded-2xl flex items-center justify-between opacity-50 cursor-not-allowed">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="box" class="text-sky-400"></i>
+                        <span class="font-semibold">Amazon</span>
+                    </div>
+                    <span class="text-[10px] font-bold bg-sky-500/10 text-sky-500/70 px-2 py-1 rounded-md">EM BREVE</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-auto py-10 text-slate-500 text-[11px] flex flex-col items-center gap-4">
+        <p>© 2026 PW TechSphere - Todos os direitos reservados.</p>
+        <div class="flex gap-6">
+            <a href="https://www.instagram.com/pw_techsphere/" target="_blank" class="hover:text-white transition-colors duration-300">
+                <i data-lucide="instagram" class="w-6 h-6"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61582214271559&locale=pt_BR" target="_blank" class="hover:text-white transition-colors duration-300">
+                <i data-lucide="facebook" class="w-6 h-6"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
